@@ -1,0 +1,13 @@
+-- SELECT * FROM states;
+-- SELECT * FROM states WHERE id > 2;
+-- SELECT * FROM states ORDER BY name ASC;
+-- SELECT * FROM states ORDER BY id DESC;
+-- 
+-- SELECT * FROM cities WHERE state_id = 2;
+-- SELECT COUNT(*) as total FROM cities;
+-- SELECT COUNT(*) as total FROM cities GROUP BY state_id;
+-- 
+-- SELECT * FROM businesses LEFT JOIN cities ON businesses.city_id LEFT JOIN states on cities.state_id = states.id;
+-- SELECT * FROM businesses LEFT JOIN cities ON businesses.city_id LEFT JOIN states on cities.state_id = states.id WHERE states.name = 'California';
+-- SELECT COUNT(*) as total FROM businesses LEFT JOIN cities ON businesses.city_id LEFT JOIN states on cities.state_id = states.id GROUP BY cities.id;
+-- SELECT COUNT(*) as total_businesses, states.name as state_name from businesses LEFT JOIN cities ON businesses.city_id = cities.id LEFT JOIN states ON cities.state_id = states.id GROUP BY states.id
